@@ -1,4 +1,4 @@
-import airpodsImage from '../assets/airpods.png'
+import airpodsImage from '../assets/airpods.jpeg'
 import macbookImageAir from '../assets/macbook-air.jpeg'
 import macbookImagePro from '../assets/macbook-pro.png'
 import iphoneImage15 from '../assets/iphone-15-pro-max.png'

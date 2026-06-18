@@ -69,22 +69,23 @@
 
 <script setup>
 import { airpods, social } from '@/data/products'
+import airpodsImage from '../assets/airpods.jpeg'
 
 const { whatsappUrl: wpp } = social
 
 const tips = [
   {
-    icon: '🎵',
+    icon: '',
     title: 'Áudio Adaptativo',
     desc: 'O AirPods Pro 2 se adapta ao ambiente, ajustando cancelamento e transparência em tempo real.',
   },
   {
-    icon: '🔇',
+    icon: '',
     title: 'Cancelamento 2x melhor',
     desc: 'O chip H2 proporciona cancelamento de ruído ativo duas vezes mais eficiente.',
   },
   {
-    icon: '🫶',
+    icon: '',
     title: 'Conforto Total',
     desc: 'Design ergonômico com quatro tamanhos de pontas de silicone para um ajuste perfeito.',
   },
