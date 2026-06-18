@@ -8,7 +8,7 @@
     <section class="apple-section">
       <div class="max-w-[980px] mx-auto">
         <div class="text-center mb-12 fade-section">
-          <h2 class="section-title mb-2">MacBook</h2>
+          <h2 class="section-title mb-2 ">MacBook</h2>
           <p class="section-subtitle">Potência que redefine o possível.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -96,6 +96,7 @@
 </template>
 
 <script setup>
+import "../style.css"
 import HeroSection from '@/components/HeroSection.vue'
 import ProductCard from '@/components/ProductCard.vue'
 import { macbooks, iphones, ipads, airpods, social } from '@/data/products'
@@ -157,6 +158,15 @@ const { whatsappUrl } = social
   border-radius: 0 0 10px 10px;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+  display: contents;
+}
+
+.section-title {
+  color: #0470E6;
+}
+
 @media (min-width: 768px) {
   .airpod {
     width: 40px;
@@ -174,5 +184,21 @@ const { whatsappUrl } = social
     height: 16px;
     bottom: -12px;
   }
+
+  .section-title.display {
+    font-size: 3rem;
+    display: block;
+  }
+
+
+  .mb-12 {
+    margin-bottom: 3rem;
+    display: contents;
+  }
+
+  .section-title {
+    color: #0470E6;
+  }
+
 }
 </style>

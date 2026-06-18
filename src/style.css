@@ -11,9 +11,11 @@
   ::-webkit-scrollbar {
     width: 6px;
   }
+
   ::-webkit-scrollbar-track {
     background: #f5f5f7;
   }
+
   ::-webkit-scrollbar-thumb {
     background: #d2d2d7;
     border-radius: 3px;
@@ -23,6 +25,23 @@
     @apply scroll-mt-20;
   }
 
+  .fade-section {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: content;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .section-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
   img {
     @apply select-none;
     -webkit-user-drag: none;
@@ -30,20 +49,28 @@
 }
 
 @layer components {
+  .apple-section {
+    @apply py-20 md:py-28 px-5 bg-white;
+  }
+
+  .apple-section-alt {
+    @apply py-20 md:py-28 px-5 bg-apple-gray-light;
+  }
+
+  .section-title {
+    @apply text-[36px] md:text-[48px] lg:text-[56px] font-semibold tracking-[-0.035em] leading-[1.08] text-[#1d1d1f];
+  }
+
+  .section-subtitle {
+    @apply text-[19px] md:text-[22px] text-[#86868b] font-normal leading-relaxed max-w-2xl mx-auto;
+  }
+
   .apple-btn {
     @apply inline-flex items-center gap-1.5 text-apple-blue no-underline text-[17px] font-medium transition-colors duration-200 hover:text-apple-blue-light;
   }
 
   .apple-btn-outline {
     @apply inline-flex items-center gap-2 bg-apple-blue text-white no-underline px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:bg-apple-blue-light;
-  }
-
-  .apple-section {
-    @apply py-16 md:py-20 px-5 md:px-8;
-  }
-
-  .apple-section-alt {
-    @apply py-16 md:py-20 px-5 md:px-8 bg-apple-gray-light;
   }
 
   .badge {
@@ -66,14 +93,6 @@
     @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5;
   }
 
-  .section-title {
-    @apply text-[40px] md:text-[56px] font-bold tracking-tight leading-[1.05] text-[#1d1d1f];
-  }
-
-  .section-subtitle {
-    @apply text-[21px] md:text-[24px] text-apple-gray max-w-xl mx-auto leading-relaxed;
-  }
-
   .fade-section {
     @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
   }
@@ -81,10 +100,33 @@
   .fade-section.visible {
     @apply opacity-100 translate-y-0;
   }
-  .absolute {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
+  @layer components {
+    .fade-section {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      display: block;
+
+      @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+    }
+
+    .fade-section.visible {
+      @apply opacity-100 translate-y-0;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      display: block;
+
+      @apply font-semibold tracking-[-0.035em] leading-[1.08] text-apple-text;
+    }
+
+    .section-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      display: block;
+
+      @apply text-apple-gray font-normal leading-relaxed max-w-2xl mx-auto;
+    }
   }
 }
