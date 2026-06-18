@@ -1,4 +1,5 @@
 import airpodsImage from '../assets/airpods.jpeg'
+import airpodsMaxImage from '../assets/airpods-max.jpeg'
 import macbookImageAir from '../assets/macbook-air.jpeg'
 import macbookImagePro from '../assets/macbook-pro.png'
 import iphoneImage15 from '../assets/iphone-15-pro-max.png'
@@ -36,20 +37,20 @@ export const macbooks = [
 export const iphones = [
   {
     id: 'iphone-15-pro',
-    name: 'iPhone 15 Pro',
+    name: 'iPhone 15\niPhone 15 Pro\niPhone 15 Pro Max',
     tag: 'Versatil',
     tagType: 'new',
-    specs: ['A18 Pro', '128 GB', '6.1" OLED', '48 MP'],
+    specs: ['A16', '128 GB', '6.1" OLED', '48 MP'],
     image: iphoneImage15,
     whatsapp: 'Quero%20comprar%20o%20iPhone%2015%20Pro',
     featured: false
   },
   {
     id: 'iphone-16-pro',
-    name: 'iPhone 16 Pro',
+    name: 'iPhone 16\niPhone 16 Pro\niPhone 16 Pro Max',
     tag: 'Destaque',
     tagType: 'default',
-    specs: ['A18 Pro', '256 GB', '6.3" OLED', '48+12+12 MP'],
+    specs: ['A18', '256 GB', '6.3 OLED', '48+12+12 MP'],
     image: iphoneImage16,
     whatsapp: 'Quero%20comprar%20o%20iPhone%2016%20Pro',
     featured: false
@@ -57,10 +58,10 @@ export const iphones = [
   
   {
     id: 'iphone-17-pro-max',
-    name: 'iPhone 17 Pro Max',
+    name: 'iPhone 17\niPhone 17 Pro\niPhone 17 Pro Max',
     tag: 'Topo de Linha',
     tagType: 'gold',
-    specs: ['A19 Pro', '512 GB', '6.9" OLED', '48+48+12 MP'],
+    specs: ['A19', '512 GB', '6.9 OLED', '48+48+12 MP'],
     image: iphoneImage17,
     whatsapp: 'Quero%20comprar%20o%20iPhone%2017%20Pro%20Max',
     featured: true
@@ -100,16 +101,28 @@ export const ipads = [
   }
 ]
 
-export const airpods = {
-  id: 'airpods-pro-2',
-  name: 'AirPods',
-  tag: 'Best Seller',
-  tagType: 'default',
-  specs: ['H2', 'ANC 2x', '6h bateria', 'USB-C', 'IPX4'],
-  image: airpodsImage,
-  whatsapp: 'Quero%20comprar%20o%20AirPods%20Pro%202',
-  description: 'Cancelamento de ruído ativo 2x melhor. Áudio adaptativo. USB-C.'
-}
+export const airpods = [
+  {
+    id: 'airpods-pro-2',
+    name: 'AirPods Pro 2',
+    tag: 'Best Seller',
+    tagType: 'default',
+    specs: ['H2', 'ANC 2x', 'USB-C', 'Áudio Adaptativo', 'IP54'],
+    image: airpodsImage,
+    whatsapp: 'Quero%20comprar%20o%20AirPods%20Pro%202',
+    description: 'Cancelamento ativo de ruído, áudio adaptativo e modo transparência para uma experiência sonora inteligente no dia a dia.',
+  },
+  {
+    id: 'airpods-max',
+    name: 'AirPods Max',
+    tag: 'Premium',
+    tagType: 'gold',
+    specs: ['Over-ear', 'ANC', 'Áudio Espacial', 'Alta fidelidade', 'Conforto premium'],
+    image: airpodsMaxImage,
+    whatsapp: 'Quero%20comprar%20o%20AirPods%20Max',
+    description: 'Fone premium over-ear com áudio de alta fidelidade, cancelamento ativo de ruído e acabamento sofisticado.',
+  },
+]
 
 export const social = {
   whatsapp: '5585999786161',
@@ -117,3 +130,4 @@ export const social = {
   whatsappUrl: 'https://wa.me/5585999786161',
   instagramUrl: 'https://www.instagram.com/felipe_iphones.ce/'
 }
+
