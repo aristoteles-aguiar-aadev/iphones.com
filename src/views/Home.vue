@@ -50,24 +50,6 @@
       </div>
     </section>
 
-    <!-- <section class="apple-section-alt">
-      <div class="max-w-[980px] mx-auto">
-        <div class="text-center mb-12 fade-section">
-          <h2 class="section-title mb-2">AirPods</h2>
-          <p class="section-subtitle">Som que envolve. Liberdade que conecta.</p>
-        </div>
-
-        <div class="max-w-2xl mx-auto">
-          <ProductCard :product="airpods" />
-        </div>
-
-        <div class="text-center mt-10">
-          <router-link to="/airpods" class="apple-btn">
-            Ver mais detalhes de AirPods →
-          </router-link>
-        </div>
-      </div>
-    </section> -->
     <section class="apple-section-alt">
       <div class="max-w-[980px] mx-auto">
         <div class="text-center mb-12 fade-section">
