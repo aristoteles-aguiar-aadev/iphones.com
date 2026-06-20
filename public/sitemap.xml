@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://iphonefortal.com.br/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://iphonefortal.com.br/iphone</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://iphonefortal.com.br/macbook</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://iphonefortal.com.br/airpods</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://iphonefortal.com.br/ipad</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>
